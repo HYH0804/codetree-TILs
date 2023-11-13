@@ -9,4 +9,4 @@ for j in range(len(ar)):
     print(ar[j],end=" ")
 
 
-//파이썬 배열 뒤 추가 append
+#파이썬 배열 뒤 추가 append

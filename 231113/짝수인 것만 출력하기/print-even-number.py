@@ -7,3 +7,6 @@ for i in range(n):
 
 for j in range(len(ar)):
     print(ar[j],end=" ")
+
+
+//파이썬 배열 뒤 추가 append

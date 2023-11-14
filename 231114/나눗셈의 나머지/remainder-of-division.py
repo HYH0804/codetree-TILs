@@ -2,7 +2,7 @@ arr= list(map(int,input().split()))
 
 dividend =arr[0]
 divisor= arr[1]
-remain= [0]*9
+remain= [0]*10
 
 while dividend>1:
     remain[dividend%divisor-1]+=1

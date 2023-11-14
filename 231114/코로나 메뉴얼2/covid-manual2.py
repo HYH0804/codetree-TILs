@@ -20,4 +20,7 @@ for i in range(5):
     if i==4 and cnt[i]>=2:
         print("E")
     else:
-        print(cnt[i],end=" ")
+        if i!=4:
+            print(cnt[i],end=" ")
+        else:
+            break

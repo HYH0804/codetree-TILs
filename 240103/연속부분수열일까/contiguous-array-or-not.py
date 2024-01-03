@@ -15,7 +15,7 @@ for i in st:
     else:
         j = i
         cnt_b=0
-        while cnt_b<len(B) & A[j]==B[cnt_b] :
+        while cnt_b<len(B) and j<len(A) and A[j]==B[cnt_b] :
             j+=1
             cnt_b+=1
             continue

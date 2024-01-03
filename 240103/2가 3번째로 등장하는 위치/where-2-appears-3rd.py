@@ -1,8 +1,7 @@
 cnt = 0
 m = int(input())
 arr =list(map(int,input().split()))
-
-i=0
+int i =0
 for i,ele in enumerate(arr):
     if cnt==3 :
         break

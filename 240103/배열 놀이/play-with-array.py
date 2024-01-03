@@ -10,9 +10,10 @@ for _ in  range(qe) :
             print(a+1)
         else:
             print(0)
-    else:
-        cnt = q_list[1] - 1  # 시작 인덱스를 0부터 시작하도록 수정
-        cnt_end = q_list[2] - 1  # 끝 인덱스를 0부터 시작하도록 수정
-        while cnt <= cnt_end:
-            print(ele_list[cnt], end=" ")
-            cnt += 1
+    else : 
+        cnt = q_list[1]
+        cnt_end = q_list[2]
+        while cnt<=cnt_end:
+            print(ele_list[cnt-1],end=" ")
+            cnt+=1
+        print()

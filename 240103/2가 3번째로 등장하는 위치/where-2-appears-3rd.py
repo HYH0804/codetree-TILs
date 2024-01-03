@@ -9,7 +9,7 @@ for i,ele in enumerate(arr):
         if ele == 2:
             cnt+=1
             continue
-if i==len(arr):
+if i+1==len(arr):
     print(i+1)
 else:
     print(i)

@@ -5,8 +5,8 @@ for _ in  range(qe) :
     if q_list[0] == 1:
         print(ele_list[q_list[1]-1])
     elif q_list[0]==2:
-        a =ele_list.index(q_list[1])
-        if  a!= -1:
+        if q_list[1] in ele_list:
+            a =ele_list.index(q_list[1])
             print(a+1)
         else:
             print(0)

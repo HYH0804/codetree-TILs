@@ -4,7 +4,7 @@ max = -sys.maxsize
 min = sys.maxsize
 
 for i in arr :
-    if i!= 999:
+    if i!= 999 and i!=-999:
         if max < i:
             max= i
         if min > i:

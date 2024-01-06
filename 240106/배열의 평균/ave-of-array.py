@@ -17,4 +17,4 @@ for i in range(4):
     sm=0
 print()
 
-print(total/8.0)
+print('%.1f'%(total/8.0))

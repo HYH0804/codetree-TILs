@@ -1,3 +1,4 @@
+#브루트포스
 import sys
 num = int(input())
 arr = list(map(int,input().split()))

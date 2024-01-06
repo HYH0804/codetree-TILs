@@ -16,6 +16,6 @@ for i,ele in enumerate(arr):
     if ele == max_index:
         continue
     else:
-        if semax < i: 
-            semax = i
+        if semax < ele: 
+            semax = ele
 print(max, semax)

@@ -13,7 +13,7 @@ for i,ele in enumerate(arr) :
 
 semax = -sys.maxsize
 for i,ele in enumerate(arr):
-    if ele == max_index:
+    if i == max_index:
         continue
     else:
         if semax < ele: 

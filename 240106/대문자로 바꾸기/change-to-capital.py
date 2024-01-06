@@ -1,3 +1,7 @@
+#string.upper() >> 문자열 대문자로 바꿔서 리턴. 기존 문자열은 변화 X 
+#string.lower() >> 문자열 소문자로 바꿔서 리턴. 기존 문자열은 변화 X
+
+
 arr_2 = list()
 for _ in range(5):
     arr_1 = list(input().split())

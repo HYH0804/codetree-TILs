@@ -4,7 +4,7 @@ arr_2d = [[0 for _ in range(n)]
 for _ in range(n)]
 num=1
 a=n-1
-while num<n**2:
+while num<=n**2:
     if num%n==1 and num!=1:
         if (num//n)%2==0:
             for i in range(n-1,-1,-1):

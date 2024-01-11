@@ -1,4 +1,4 @@
-n . m = list(map(int,input().split()))
+n , m = list(map(int,input().split()))
 
 def gcd(n,m):
     gcd= 0

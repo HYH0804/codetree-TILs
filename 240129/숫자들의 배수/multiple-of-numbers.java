@@ -8,7 +8,7 @@ public class Main {
         int[] array = new int[100];
         array[0]=n;
         while (cnt<2){
-            array[i+1]=4*(i+2);
+            array[i+1]=n*(i+2);
             if(array[i]%5==0){
                 i++;
                 cnt+=1;

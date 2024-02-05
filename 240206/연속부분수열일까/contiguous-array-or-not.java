@@ -17,7 +17,7 @@ public class Main {
         for (int i =0; i<n1; i++){
             if(array_n1[i]==array_n2[0]){
                 for(int j=0; j<n2;j++){
-                    if(array_n1[i+j]!=array_n2[j]){
+                    if(i+j>=n1 || array_n1[i+j]!=array_n2[j]){
                         break;
                     }
                     else if(j==n2-1){

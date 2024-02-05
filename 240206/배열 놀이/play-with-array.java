@@ -23,7 +23,12 @@ public class Main {
                         break;
                     }
                 }
+                if(index ==0){
+                System.out.printf("%d\n",index);
+                }
+                else{
                 System.out.printf("%d\n",index+1);
+                }
             }
             else{
                 int a= sc.nextInt();

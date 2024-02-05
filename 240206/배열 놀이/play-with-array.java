@@ -19,16 +19,12 @@ public class Main {
                 int index=0;
                 for(int z=0 ; z<n; z++){
                     if(array[z]==a){
-                        index=z;
+                        index=z+1;
                         break;
                     }
                 }
-                if(index ==0){
                 System.out.printf("%d\n",index);
-                }
-                else{
-                System.out.printf("%d\n",index+1);
-                }
+
             }
             else{
                 int a= sc.nextInt();

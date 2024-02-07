@@ -9,7 +9,7 @@ public class Main {
         }
         int max = Integer.MIN_VALUE;
         int index =n-1;
-        while(n>1){
+        while(n>=1){
             for (int i=n-1; i>=0; i--){
                 if(max<=array[i]){
                     max=array[i];

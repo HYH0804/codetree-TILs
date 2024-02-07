@@ -11,13 +11,15 @@ public class Main {
         int index=-1;
         int max =0;
         for(int j=1; j<1001; j++){
-            if(array[j]<=1 && array[j]>0 && max<array[j]){
+            if(array[j]<=1 && array[j]>0 ){
                 index=j;
-                max=array[j];
             }
         }
-
-        System.out.printf("%d",index);
-    
+        if(index ==-1){
+            System.out.printf("%d",index);
+        }
+        else{
+            System.out.printf("%d",index);
+        }
     }
 }

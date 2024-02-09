@@ -16,7 +16,8 @@ public class Main {
             for(int j=0; j<b; j++){
                 System.out.printf("%d ",array[i][j]);
             }
+            System.out.println();
         }
-        System.out.println();
+        
     }
 }

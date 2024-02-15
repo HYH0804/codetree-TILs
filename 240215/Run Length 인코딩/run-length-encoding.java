@@ -20,7 +20,7 @@ public class Main {
         int len=0;
         len = j/2;
         for(int z=1; z<j; z=z+2){
-            if(0<=z && z<10){
+            if(0<z && z<10){
                 len++;
             }
             else if(10<=z && z<100){

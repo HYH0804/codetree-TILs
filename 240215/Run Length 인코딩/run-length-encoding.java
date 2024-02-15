@@ -17,7 +17,20 @@ public class Main {
             array[j+1]=cnt;
             j=j+2;
         }
-        System.out.printf("%d\n",j);
+        int len=0;
+        len = j/2;
+        for(int z=1; z<j; z=z+2){
+            if(0<=z && z<10){
+                len++;
+            }
+            else if(10<=z && z<100){
+                len=len+2;
+            }
+            else if(100<=z && z<999){
+                len=len+3;
+            }
+        }
+        System.out.printf("%d\n",len);
         for(int z=0; z<j; z=z+2){
             System.out.printf("%c%d",(char)array[z],array[z+1]);
         }

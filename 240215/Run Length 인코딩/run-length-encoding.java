@@ -26,7 +26,7 @@ public class Main {
             else if(10<=z && z<100){
                 len=len+2;
             }
-            else if(100<=z && z<999){
+            else if(100<=z && z<1000){
                 len=len+3;
             }
         }

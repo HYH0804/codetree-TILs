@@ -23,10 +23,10 @@ public class Main {
         String a = "";
         String b = "";
         for(int i =0; i<cnt1; i++){
-            a=a+t1[i];
+            a=a+String.valueOf(t1[i]);
             }
         for(int i =0; i<cnt2; i++){
-            b=b+t2[i];
+            b=b+String.valueOf(t2[i]);
             }
         System.out.printf("%d",Integer.parseInt(a)+Integer.parseInt(b));
     }

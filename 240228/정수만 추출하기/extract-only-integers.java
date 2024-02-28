@@ -26,6 +26,6 @@ public class Main {
         }
         str1=str1.substring(0,cnt1+2);
         str2=str2.substring(0,cnt2+2);
-        System.out.printf("%d",Integer.parseInt(str1)+Integer.parseInt(str2));
+        System.out.printf("%l",Integer.parseInt(str1)+Integer.parseInt(str2));
     }
 }

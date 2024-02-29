@@ -10,6 +10,9 @@ public class Main {
         int k = 1;
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
+                if(k>9){
+                    k=1;
+                }
                 System.out.printf("%d ",k);
                 k++;
             }

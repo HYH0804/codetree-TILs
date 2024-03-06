@@ -11,9 +11,11 @@ public class Main {
             arr[i]=sc.nextInt();
         }
         Arrays.sort(arr);
-        for(int i=1; i<N; i++){
-            int temp= arr[i]+arr[2*N-1-i];
-            max=Math.max(temp,max);
+        if(N==1){
+            for(int i=1; i<N; i++){
+                int temp= arr[i]+arr[2*N-1-i];
+                max=Math.max(temp,max);
+            }
         }
         System.out.println(max);
     }

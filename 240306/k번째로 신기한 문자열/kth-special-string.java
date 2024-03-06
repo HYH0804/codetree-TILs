@@ -32,7 +32,9 @@ public class Main {
                 colle.add(arr[i]);
             }
         }
-        System.out.println(colle.get(index+1));
+        String[] str_array = colle.toArray(new String[0]);
+        Arrays.sort(str_array);
+        System.out.println(str_array[index-1]);
 
     }
 }

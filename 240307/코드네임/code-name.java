@@ -24,6 +24,7 @@ public class Main {
             mv[i]=new MV(s,n);
         }
         Arrays.sort(mv,new Comparator<MV>(){
+            @Override
             public int compare(MV m1 , MV m2){
                 return m1.point-m2.point;
             }

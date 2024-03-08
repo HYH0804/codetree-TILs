@@ -14,7 +14,9 @@ public class Main {
         }
         Arrays.sort(arr,new Comparator<Man>(){
             public int compare(Man m1 , Man m2){
-                return m2.name.compareTo(m1.name);
+                String st1= m1.name;
+                String st2=m2.name;
+                return st2.compareTo(st1);
             } 
         });
         System.out.printf("name %s\naddr %s\ncity %s",arr[0].name,arr[0].add,arr[0].region);

@@ -14,19 +14,10 @@ public class Main {
         }
         Arrays.sort(arr,new Comparator<Man>(){
             public int compare(Man m1 , Man m2){
-                String[] ar = new String[2];
-                ar[0] = m1.name;
-                ar[1] = m2.name;
-                Arrays.sort(ar);
-                if(ar[0].equals(m1.name)){
-                    return 0;
-                }
-                else{
-                    return 1;
-                }
+                return m2.name.compareTo(m1.name);
             } 
         });
-        System.out.printf("name %s\naddr %s\ncity %s",arr[n-1].name,arr[n-1].add,arr[n-1].region);
+        System.out.printf("name %s\naddr %s\ncity %s",arr[0].name,arr[0].add,arr[0].region);
     }
     public static class Man {
         private String name;

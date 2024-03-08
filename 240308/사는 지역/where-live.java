@@ -19,10 +19,10 @@ public class Main {
                 ar[1] = m2.name;
                 Arrays.sort(ar);
                 if(ar[0].equals(m1.name)){
-                    return 1;
+                    return 0;
                 }
                 else{
-                    return 0;
+                    return 1;
                 }
             } 
         });

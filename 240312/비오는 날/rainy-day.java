@@ -5,45 +5,21 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        Rain[] ra = new Rain[n];
+        Rain near = new Rain("9999-99-99" ,"fas","Rain");    
 
         for (int i=0; i<n; i++){
             String str1 = sc.next();
             String str2 = sc.next();
             String str3 = sc.next();
-            ra[i]=new Rain(str1,str2,str3);
-        }
-        List<Integer> index = new ArrayList<>();
-        for(int i=0; i<n; i++){
-            if(ra[i].Weth.equals("Rain")){
-                index.add(i);       
-            }
-        }
-        int z= index.get(0);
-        for(int k : index){
-            String[] str_array1 = ra[k].Date.split("-");
-            String[] str_array2 = ra[z].Date.split("-");
-            int year1 = Integer.parseInt(str_array1[0]);
-            int year2 = Integer.parseInt(str_array2[0]);
-            int month1= Integer.parseInt(str_array1[1]);
-            int month2=Integer.parseInt(str_array2[1]);
-            int day1=Integer.parseInt(str_array1[2]);
-            int day2=Integer.parseInt(str_array2[2]);
-            if(year1<year2){
-                z=k;
-            }
-            else if(year1==year2) {
-                if(month1 < month2){
-                    z=k;
-                }
-                else if(month1 == month2){
-                    if(day1 < day2){
-                        z=k;
-                    }
+            Rain temp= new Rain(str1,str2,str3);
+            if(temp.Weth.equals("Rain")){
+                if(temp.Date.compareTo(near.Date)<0){
+                    near = temp;
                 }
             }
         }
-        System.out.printf("%s %s %s",ra[z].Date,ra[z].Day,ra[z].Weth);
+        
+        System.out.printf("%s %s %s",near.Date,near.Day,near.Weth);
         
 
     }  

@@ -2,25 +2,20 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int start_day = 11;
-        int start_hour = 11;
-        int start_min = 11;
-        int end_day= sc.nextInt();
-        int end_hour=sc.nextInt();
-        int end_min=sc.nextInt();
-        int count =0;
-        while(start_day != end_day || start_hour!= end_hour || start_min != end_min){
-            count++;
-            start_min++;
-            if(start_min==60){
-                start_min=0;
-                start_hour++;
-            }
-            if(start_hour==24){
-                start_hour=0;
-                start_day++;
-            }
+        long start_day = 11;
+        long start_hour = 11;
+        long start_min = 11;
+        long end_day= sc.nextInt();
+        long end_hour=sc.nextInt();
+        long end_min=sc.nextInt();
+        long count =0;
+        long timeStart= 11*24*60+11*60+11;
+        long timeEnd = end_day*24*60+end_hour*60+end_min;
+        if(timeStart>timeEnd){
+            System.out.printf("-1");
         }
-        System.out.printf("%d",count);
+        else{
+            System.out.printf("%d",timeEnd-timeStart);
+        }
     }
 }

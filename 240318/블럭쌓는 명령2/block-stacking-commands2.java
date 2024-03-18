@@ -13,7 +13,7 @@ public class Main {
             int start = sc.nextInt();
             int end = sc.nextInt();
             if(start!=end){
-                for(int j=start; i<=end; i++){
+                for(int j=start; j<=end; j++){
                     arr[j]++;
                 }
             }

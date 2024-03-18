@@ -27,7 +27,7 @@ public class Main {
                 maxIndex=i;
             }
         }
-        System.out.printf("%d",arr[maxIndex]);
+        System.out.print(arr[maxIndex]);
 
 
     }

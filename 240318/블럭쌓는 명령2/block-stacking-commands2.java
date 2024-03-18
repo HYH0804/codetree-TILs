@@ -12,10 +12,14 @@ public class Main {
         for(int i =0; i<K; i++){
             int start = sc.nextInt();
             int end = sc.nextInt();
-                for(int j=start; j<=end; j++){
+            if(start!=end){
+                for(int j=start; i<=end; i++){
                     arr[j]++;
                 }
-      
+            }
+            else{
+                arr[start]++;
+            }
         }
         int maxIndex =0;
         for(int i =1; i<N; i++){

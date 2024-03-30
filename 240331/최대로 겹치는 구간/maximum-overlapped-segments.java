@@ -10,8 +10,9 @@ public class Main {
         for(int i=0; i<n; i++){
             int start = sc.nextInt();
             int end = sc.nextInt();
-            arr[start+OFFSET]++;
-            arr[end+OFFSET-1]++;
+            for(int j=start+OFFSET; j<end+OFFSET; j++){
+                arr[j]++;
+            }
         }
         int max = 0 ;
         for(int i=0; i<200; i++){

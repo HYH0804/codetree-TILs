@@ -13,12 +13,12 @@ public class Main {
         Arrays.sort(arr);
         int count=0;
         for(int i=0; i<n ; i++){
-            if(count==k){
-                System.out.printf("%s",arr[i]);
-                break;
-            }
             if(isStart(arr[i],T)){
                 count++;
+            }
+            if(count==k){
+                System.out.printf("%s",arr[i+1]);
+                break;
             }
         }
 

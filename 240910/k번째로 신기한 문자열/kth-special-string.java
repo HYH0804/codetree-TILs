@@ -11,16 +11,16 @@ public class Main {
             arr[i] = sc.next();
         }
         Arrays.sort(arr);
-        int count=1;
+        int count=0;
         for(int i=0; i<n ; i++){
             if(count==k){
+                System.out.printf("%s",arr[i]);
                 break;
             }
             if(isStart(arr[i],T)){
                 count++;
             }
         }
-        System.out.printf("%s",arr[count]);
 
 
     }

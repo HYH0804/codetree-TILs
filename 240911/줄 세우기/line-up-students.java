@@ -20,7 +20,7 @@ public class Main {
                     return o2.weight-o1.weight;
                 }
                 else{
-                    return o2.order - o1.order;
+                    return o1.order - o2.order;
                 }
             }
         });

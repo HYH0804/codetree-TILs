@@ -8,7 +8,7 @@ public class Main {
         int c = sc.nextInt();
         int start = minute(11, 11, 11);
         int end = minute(a, b, c);
-        if(end>start){
+        if(end>=start){
             System.out.println(end-start);
         }
         else {

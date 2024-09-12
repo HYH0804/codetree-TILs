@@ -5,29 +5,19 @@ public class Main {
     Scanner sc = new Scanner(System.in);
     int a = sc.nextInt();
     int b = sc.nextInt();
-    int n = sc.nextInt();
-    List<Integer> arr = change(n);
-    int digit = changef(a,arr);
+    String n = sc.next();
+    int digit = change(n,a);
     List<Integer> arr2 = changeDigit(b,digit);
     for(int k : arr2){
         System.out.printf("%d",k);
     }
 
     }
-    public static List<Integer> change(int n){ //분리 , 거꾸로
-        List<Integer> list = new ArrayList<>();
-        while(n>=10){
-            list.add(n%10);
-            n=n/10;
-        }
-        list.add(n);
-        return list;
-    }
-
-    public static int changef(int d,List<Integer> arr){
+    public static int change(String n,int a){ //분리 , 거꾸로
+        char[] arr = n.toCharArray();
         int total=0;
-        for(int i =0; i<arr.size(); i++){
-            total +=Math.pow(d,i)*arr.get(i);
+        for(int i=arr.length-1; i>=0; i--){
+            total+=Math.pow(a,arr.length-i-1)*(arr[i]-'0');
         }
         return total;
     }

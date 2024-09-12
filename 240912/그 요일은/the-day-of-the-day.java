@@ -8,9 +8,15 @@ public class Main {
         int m2= sc.nextInt();
         int d2= sc.nextInt();
         String s = sc.next();
-
-        int diff = days(m2,d2)-days(m1,d1);
-        System.out.printf("%d",(diff/7)+1);        
+        int cycle = (days(m2,d2)-days(m1,d1))/7;
+        int rest = (days(m2,d2)-days(m1,d1))%7;
+        if(getIndex(s)<=rest){
+            System.out.printf("%d",cycle+1);
+        }
+        else{
+            System.out.printf("%d",cycle);
+        }
+             
         
         
     }
@@ -25,4 +31,17 @@ public class Main {
         return total;
 
     }
+    public static int getIndex(String s){
+        String[] arr = new String[] {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
+        for (int i=0; i<arr.length; i++){
+            if(arr[i].equals(s)){
+                return i;
+            }
+        }
+        return -1;
+    }
 }
+
+/*
+총 며칠인지는 나와있음. n일 
+*/

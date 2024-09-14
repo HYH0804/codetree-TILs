@@ -40,7 +40,7 @@ public class Main {
         int total=0;
         for(int i=x1; i<x2;i++){
             for(int j=y1; j<y2; j++){
-                if(arr[i][j]==1){
+                if(arr[i][j]>=1){
                     total++;
                 }
                 else if(arr[i][j]==2){

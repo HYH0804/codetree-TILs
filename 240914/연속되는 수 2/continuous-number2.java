@@ -19,7 +19,11 @@ public class Main {
             }
             else if(arr[i]==arr[i-1]){
                 count++;
+                if(max<count){
+                    max=count;
+                }
             }
+            
         }
         System.out.printf("%d",max);
     }

@@ -28,7 +28,7 @@ public class Main {
         int hd= x2A-x1A;
         int vd= y2A-y1A;
         if(isHorizental(arr,hd)||isVertical(arr,vd)){
-            System.out.printf("%d",count(arr));
+            System.out.printf("%d",count(arr,x1A,x2A,y1A,y2A));
         }
         else{
             System.out.printf("%d",count2(x1A,x2A,y1A,y2A));
@@ -36,10 +36,10 @@ public class Main {
 
 
     }
-    public static int count(int[][] arr){
+    public static int count(int[][] arr,int x1,int x2, int y1, int y2){
         int total=0;
-        for(int i=0; i<arr.length;i++){
-            for(int j=0; j<arr[0].length; j++){
+        for(int i=x1; i<x2;i++){
+            for(int j=y1; j<y2; j++){
                 if(arr[i][j]==1){
                     total++;
                 }

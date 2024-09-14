@@ -13,16 +13,13 @@ public class Main {
         for(int i=0; i<n; i++){
             if(i!=0 && !isToggle(arr,i)){
                 count++;
-                if(max<count){
-                    max=count;
-                }
             }
             else{
-                if(max<count){
-                    max=count;
-                }
                 count=1;
             }
+            if(max<count){
+                max=count;
+                }
         }
         System.out.printf("%d",max);
 

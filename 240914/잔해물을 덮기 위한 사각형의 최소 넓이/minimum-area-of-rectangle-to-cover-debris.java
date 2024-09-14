@@ -27,7 +27,7 @@ public class Main {
         }
         int hd= x2A-x1A;
         int vd= y2A-y1A;
-        if(isHorizental(arr,hd)||isVertical(arr,vd)){
+        if(isHorizental(arr,hd,x1A,x2A,y1A,y2A)||isVertical(arr,vd,x1A,x2A,y1A,y2A)){
             System.out.printf("%d",count(arr,x1A,x2A,y1A,y2A));
         }
         else{
@@ -54,13 +54,13 @@ public class Main {
     public static int count2(int x1,int x2, int y1, int y2){
         return (y2-y1)*(x2-x1);
     }
-    public static boolean isHorizental(int [][] arr,int hd){
+    public static boolean isHorizental(int [][] arr,int hd,int x1,int x2, int y1, int y2){
         boolean flag = false;
         boolean flag2 = false;
         int start=-1;
         int end=-1;
-        for(int i=0; i<arr.length; i++){
-            for(int j=0; j<arr[0].length; j++){
+        for(int i=x1; i<x2; i++){
+            for(int j=y1; j<y2; j++){
                 if(flag2==false&&arr[i][j]==2){
                     flag2=true;
                     start=j;
@@ -84,13 +84,13 @@ public class Main {
             return false;
         }
     }
-    public static boolean isVertical(int [][] arr, int vd){
+    public static boolean isVertical(int [][] arr, int vd,int x1,int x2, int y1, int y2){
         boolean flag = false;
         boolean flag2 = false;
         int start=-1;
         int end=-1;
-        for(int i=0; i<arr[0].length;i++){
-            for(int j=0; j<arr.length; j++){
+        for(int i=y1; i<y2;i++){
+            for(int j=x1; j<x2; j++){
                 if(flag2==false&&arr[j][i]==2){
                     flag2=true;
                     start=j;

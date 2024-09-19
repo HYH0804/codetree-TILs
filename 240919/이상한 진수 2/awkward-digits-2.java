@@ -7,7 +7,7 @@ public class Main {
         char[] arr =s.toCharArray();
         
         if(isOnly1(s)){
-            arr[arr.length-1]=0;
+            arr[arr.length-1]='0';
         }
         else{
             for(int i=0; i<s.length();i++){

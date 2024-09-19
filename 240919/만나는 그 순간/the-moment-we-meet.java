@@ -40,11 +40,20 @@ public class Main {
                 locationB++;
             }
         }
-        for(int i=1; i<1000001; i++){
+        boolean flag = false;
+        int j=0;
+        for(int i=1; i<locationA; i++){
             if(posA[i]==posB[i]){
-                System.out.printf("%d",i);
+                flag=true;
+                j=i;
                 break;
             }
+        }
+        if(flag==true){
+            System.out.printf("%d",j);
+        }
+        else{
+            System.out.printf("%d",-1);
         }
                 
     }

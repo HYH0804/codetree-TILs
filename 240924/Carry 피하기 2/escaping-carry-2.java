@@ -1,6 +1,7 @@
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
+        boolean flag2=false;
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -30,13 +31,19 @@ public class Main {
                     int temp = Integer.parseInt(arr[i]) + Integer.parseInt(arr[j]) + Integer.parseInt(arr[z]);
                     if(temp > max){
                         max=temp;
+                        flag2=true;
                     }
                     }
                     flag=false;
                 }
             }
         }
+        if(flag2){
         System.out.printf("%d",max);
+        }
+        else{
+            System.out.printf("%d",-1);
+        }
 
 
     }
